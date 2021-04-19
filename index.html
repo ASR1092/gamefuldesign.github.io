@@ -76,7 +76,11 @@
                </p>
                <br>
                <p class="whitetext">Die Pest kam das erste Mal um das Jahr 1347, vermutlich über Handelsschiffe aus dem Orient, auf europäisches Festland, und zwar in die Hafenstadt Caffa, die sich in der heutigen Ukraine befindet. Von dort aus breitete sie sich über die vielen verschiedenen Handelsrouten in alle Ecken Europas aus.
-               Die schlechten Hygienebedingungen und das Fehlen von medizinischem Wissen und Behandlungsmöglichkeiten beschleunigten die ohnehin schon rasante Verbreitung der Krankheit in Europa. Da zu Beginn der Pandemie noch nicht klar war, wie ansteckend die Pest ist, wurden Infizierte in örtliche Krankenhäuser gebracht, wo sie andere Kranke ansteckten. 
+               Die schlechten Hygienebedingungen und das Fehlen von medizinischem Wissen und Behandlungsmöglichkeiten beschleunigten die ohnehin schon rasante Verbreitung der Krankheit in Europa. Da zu Beginn der Pandemie noch nicht klar war, wie ansteckend die Pest ist, wurden Infizierte in örtliche Krankenhäuser gebracht, wo sie andere Kranke ansteckten. <br>
+               <br>
+               Um sich zu schützen, trugen die Menschen Tücher und Masken vor dem Gesicht und verbrannten duftende Hölzer und Kräuter, um gegen die Krankheit anzukämpfen, dies blieb allerdings erfolglos.
+               Erst nachdem bereits mehrere Hunderttausend Menschen gestorben waren, kam den Menschen die Idee der Isolation – damit ist der Vorgang gemeint, dass Erkrankte sich von gesunden Menschen fernhalten mussten, um eine mögliche Ansteckung zu verhindern. Außerdem kennzeichnete man die Türen der Häuser von Erkrankten mit einem Kreuz, später mussten betroffene Menschen sogar aus den Städten ziehen – eine Maßnahme, die viele Familien zerriss.
+
                   
 
             </div>
@@ -99,16 +103,13 @@
                            <i class=" back-logo "></i>
                            <img src="doktor.png" />
                         </div>
-                     
                      </div>
-
-
                   </div>
                   </a>
                </div>
 
                <div class="col-sm-3">
-                  <a data-toggle="tooltip" data-placement="bottom" title="Zur Behandlung nahmen die Ärzte an den Kranken einen sogenannten Aderlass vor. Sie schnitten dabei die Venen der Kranken auf, und ließen oft mehrere Liter Blut ab, um so die Krankheitskeime aus dem Körper zu spülen. Diese Art der Behandlung stieß allerdings auf keinen Erfolg – im Gegenteil: Heutzutage ist nachgewiesen, dass ein Aderlass den Patienten mehr geschadet als geholfen hat"></a>
+                  <a data-toggle="tooltip" data-placement="bottom" title="Durch die schlechten Hygienebedingungen der damaligen Zeit wurden auch die vielen Kleintiere wie z.B. Ratten, die in den dreckigen Straßen der Städte lebten, mit der Pest infiziert und trugen in Folge einen wesentlichen Beitrag zur Verbreitung der Pest bei: Sie steckten damit Flöhe an, die wiederum die Menschen ansteckten – eine Tatsache, die den Menschen der damaligen Zeit leider nicht bewusst war.">
                   <div class="circle-container">
                      <div class="outer-ring"></div>
 
@@ -121,14 +122,13 @@
                            <img src="ratte.png" />
                         </div>
                      </div>
-
-
                   </div>
-
+               </a>
                </div>
 
                <div class="col-sm-3">
-                  <div class="circle-container">
+                  <a data-toggle="tooltip" data-placement="bottom" title="Die Symptome der Pest waren hohes Fieber, die Bildung vieler schmerzhafter dunkler Beulen am ganzen Körper und der Tod nach kurzer Zeit. Durch die weite Verbreitung brachte die Pest in Europa ein Massensterben hervor, dessen Ausmaß damals keiner erahnen konnte: In den  Jahren von 1346 bis 1353 starben in Europa geschätzt 25 Millionen Menschen an den Folgen einer Pesterkrankung, das entspricht einem Drittel der Bevölkerung, die damals lebte.">
+                     <div class="circle-container">
                      <div class="outer-ring"></div>
 
                      <div class="circle">
@@ -140,13 +140,13 @@
                            <img src="bakterium.png" />
                         </div>
                      </div>
-
+                  </a>
                   </div>
 
                </div>
 
                <div class="col-sm-3">
-                  <a data-toggle="tooltip" data-placement="bottom" title="Die damalige Bevölkerung suchte einen Auslöser bzw. Verantwortliche für den Auslöser und den Folgen der Krankheit und fand diesen in den Juden. Man warf damals den Juden vor, Schuld an der Verbreitung der Pest zu haben und absichtlich die Brunnen vergiftet zu haben. Dieser Glaube wurde vor allem dadurch angefeuert, da die Juden aufgrund ihrer vorgeschriebenen Reinheitsvorschriften einen wesentlich höheren Hygienestandard als der Rest der Bevölkerung hatten, und somit auch weniger von der Pest betroffen waren. Nach der Pest gab es aufgrund solcher Judenpogrome fast keine jüdische Bevölkerung mehr in Europa."></a>
+                  <a data-toggle="tooltip" data-placement="bottom" title="Die damalige Bevölkerung suchte einen Auslöser bzw. Verantwortliche für den Auslöser und den Folgen der Krankheit und fand diesen in den Juden. Man warf damals den Juden vor, Schuld an der Verbreitung der Pest zu haben und absichtlich die Brunnen vergiftet zu haben. Dieser Glaube wurde vor allem dadurch angefeuert, da die Juden aufgrund ihrer vorgeschriebenen Reinheitsvorschriften einen wesentlich höheren Hygienestandard als der Rest der Bevölkerung hatten, und somit auch weniger von der Pest betroffen waren. Nach der Pest gab es aufgrund solcher Judenpogrome fast keine jüdische Bevölkerung mehr in Europa.">
                   <div class="circle-container">
                      <div class="outer-ring"></div>
 
@@ -160,7 +160,7 @@
                         </div>
                      </div>
                   </div>
-
+               </a>
                </div>
             </div>
 
@@ -578,6 +578,9 @@ var myQuiz = {
 document.addEventListener("DOMContentLoaded", function () {
 	myQuiz.init();
 });
+
+// Select all elements with data-toggle="tooltips" in the document
+$('[data-toggle="tooltip"]').tooltip();
 
       </script>
 
